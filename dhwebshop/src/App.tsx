@@ -9,6 +9,7 @@ function App() {
         <Row>
           <Col>
             App 1
+            <button>Default</button>
           </Col>
           <Col>
             App 2
