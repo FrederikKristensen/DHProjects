@@ -26,22 +26,20 @@ const App = () => {
 
   return <div className='App'>
     <Container>
-  <Row>
-    <Col>
-      Col 1 
-      <button>Default</button>
-    </Col>
-    <Col>
-      Col 2
-    </Col>
-    <Col>
-      Col 3
-    </Col>
-  </Row>
-</Container>
+      <Row>
+        <Col>
+          Col 1 
+          <button>Default</button>
+        </Col>
+        <Col>
+          Col 2
+        </Col>
+        <Col>
+          Col 3
+        </Col>
+      </Row>
+    </Container>
   </div>;
-  
 }
-
 
 export default App;
