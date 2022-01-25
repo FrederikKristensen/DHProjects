@@ -1,6 +1,10 @@
 import {Col, Container, Row } from 'react-bootstrap';
 import { useState } from 'react';
 import { useQuery } from 'react-query';
+import logo from './logo.jpg';
+import basket from './shopping-basket.svg';
+
+import "./style.css";
 
 export type CartItemType = {
   id: number;
@@ -24,18 +28,47 @@ const App = () => {
     );
   console.log(data);
 
+  const topcolor ={backgroundColor: '#9c0000'};
+
   return <div className='App'>
     <Container>
+      <Row style={topcolor}>
+        <Col><img className="photo" src={logo}/></Col>
+        <Col>&nbsp;</Col>
+        <Col>&nbsp;</Col>
+        <Col><img className="photo" src={basket}/></Col>
+      </Row>
+      <Row style={topcolor}>
+        <Col>&nbsp;</Col>
+      </Row>
+      <Row>
+        <Col>&nbsp;</Col>
+        <Col>&nbsp;</Col>
+      </Row>
       <Row>
         <Col>
-          Col 1 
-          <button>Default</button>
+          <button>Get data</button>
         </Col>
         <Col>
-          Col 2
+          <button>Get data</button>
         </Col>
         <Col>
-          Col 3
+          <button>Get data</button>
+        </Col>
+      </Row>
+      <Row sm={2} md={1}>
+        <Col>&nbsp;</Col>
+        <Col>&nbsp;</Col>
+      </Row>
+      <Row>
+        <Col>
+          <button>Get data</button>
+        </Col>
+        <Col>
+          <button>Get data</button>
+        </Col>
+        <Col>
+          <button>Get data</button>
         </Col>
       </Row>
     </Container>
